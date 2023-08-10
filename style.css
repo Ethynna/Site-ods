@@ -1,0 +1,328 @@
+/* Estilos gerais */
+body {
+    font-family: 'Cambo';
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: orangered;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para o título no cabeçalho */
+header h1 {
+    margin-bottom: 20px;
+}
+header h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+header  h5{
+    font-size: 20px;
+    font-weight: 500;
+}
+#logo{
+    float: left;
+}
+#logo img {
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 80px;
+}
+/* Menu de navegação */
+nav {
+    background-color: orangered;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    overflow: unset;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 100px;
+}
+
+/* Estilos para títulos secundários */
+h2 {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para parágrafos */
+p {
+    text-align: justify;
+    font-size: 20px;
+    text-indent: 2em;
+}
+
+/* Estilos para listas ordenadas */
+ol {
+    list-style: none; 
+}
+
+/* Estilos para seção de conteúdo */
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+/* Estilos para texto com marcadores */
+.texto-lateral ul {
+    list-style: none; 
+    padding-left: 0; 
+}
+
+.texto-lateral ul li {
+    position: relative;
+    padding-left: 25px; 
+    
+}
+
+.texto-lateral ul li::before {
+    content: "\2713"; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+}
+
+/* Estilos para caixas de imagem e texto */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+#metas-2030 .flex-item {
+    flex: 1;
+}
+
+#metas-2030 .flex-item p {
+    padding-top: 60px;
+    padding-right: 590px;
+}
+
+#metas-2030 .caixa {
+    width: 220px;
+    height: 490px;
+    background-color: orangered;
+    margin-left: 20px;
+}
+
+#metas-2030 .caixa h3 {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    padding: 150px 20px;
+    color: #fff;
+}
+
+#empoderamento .flex-item {
+    flex: 1;
+    padding-top: 80px;
+    padding-left: 40px;
+    justify-items: center;
+}
+
+/* Estilos para texto ao lado de imagens e vídeos */
+.texto-lateral {
+    flex: 1;
+    text-align: justify;
+}
+
+.texto {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.texto a {
+    text-decoration: none;
+}
+
+/* Estilos para vídeos responsivos */
+.flex-video {
+    flex: 1;
+    padding-left: 100px;
+}
+
+.flex-video iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+}
+#titulo-destaque {
+        flex: 1;
+        font-size: 40px;
+        font-weight: 550;
+        padding-top: 90px;
+}
+/* Estilos para a seção do formulário */
+#formulario {
+    background-color: orangered;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Estilos para cada coluna na seção do formulário */
+#formulario .flex-item {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Estilos para informações de contato e redes sociais */
+#formulario .contato-info {
+    text-align: center;
+}
+
+#formulario .contato-info h2 {
+    font-size: 24px;
+}
+
+#formulario .contato-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#formulario .contato-info a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+#formulario .contato-info i {
+    font-size: 50px;
+}
+/* Estilos para o formulário */
+form {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o título no formulário */
+form h1 {
+    line-height: 10px;
+}
+
+/* Estilos para rótulos e campos de entrada */
+label {
+    display: block;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background-color: transparent;
+    outline: 0;
+}
+
+/* Estilos para o botão de envio */
+input[type="submit"] {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* Rodapé */
+footer {
+    background-color: orangered;
+    color: #fff;
+    padding: 10px 10px;
+}
+.footer-container{
+    text-align: center;
+}
+#link{
+    color: #ffffff;
+    text-decoration: none;
+}
+/* Media query para telas menores */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+        
+    header p {
+        font-size: 14px;
+    }
+        
+    nav {
+        padding: 10px;
+    }
+        
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+        
+    .flex-container {
+        flex-direction: column;
+    }
+        
+    .flex-video,
+    .texto-lateral {
+            padding: 20px;
+    }
+        
+    #metas-2030 .flex-item p {
+        padding-right: 0;
+    }
+        
+    #metas-2030 .caixa {
+        width: 100%;
+        margin-left: 0;
+    }
+        
+    #empoderamento .flex-item {
+        padding-top: 20px;
+        padding-left: 0;
+    }
+        
+    #formulario {
+        padding: 20px;
+        }
+        
+    }
+
+
