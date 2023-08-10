@@ -272,57 +272,79 @@ footer {
     color: #ffffff;
     text-decoration: none;
 }
-/* Media query para telas menores */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+    /* Cabeçalho responsivo */
+    header {
+        padding: 10px;
+    }
+
     header h1 {
         font-size: 24px;
+        margin-bottom: 10px;
     }
-        
-    header p {
-        font-size: 14px;
+
+    header h3,
+    header h5 {
+        font-size: 16px;
     }
-        
+
+    /* Menu de navegação responsivo */
     nav {
         padding: 10px;
     }
-        
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-        
+
     nav li {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin-right: 5px;
     }
-        
-    .flex-container {
-        flex-direction: column;
+
+    /* Conteúdo principal responsivo */
+    main {
+        padding: 10px;
     }
-        
-    .flex-video,
+    #logo{
+        float: none;
+    }
+    /* Estilos para caixas de imagem e texto responsivo */
+    .flex-video {
+        flex: none;
+        width: 100%;
+        padding:0;
+    }
     .texto-lateral {
-            padding: 20px;
-    }
+        flex: none;
+        max-width: 400px;
+        padding: 0;
         
+    }
     #metas-2030 .flex-item p {
-        padding-right: 0;
+        padding: 0;
     }
-        
     #metas-2030 .caixa {
         width: 100%;
+        height: auto;
         margin-left: 0;
     }
-        
-    #empoderamento .flex-item {
-        padding-top: 20px;
-        padding-left: 0;
+
+    #metas-2030 .caixa h3 {
+        font-size: 16px;
+        padding: 10px;
     }
-        
+    /* Estilos para a seção do formulário responsivo */
     #formulario {
-        padding: 20px;
-        }
-        
+        padding: 10px;
     }
 
+    /* Estilos para o formulário responsivo */
+    form h1 {
+        line-height: 16px;
+    }
+    form {
+        flex: none;
+        width: 90%;
 
+    }
+    /* Rodapé responsivo */
+    footer {
+        padding: 5px 10px;
+    }
+}
